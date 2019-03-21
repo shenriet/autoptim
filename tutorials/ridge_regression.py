@@ -4,8 +4,7 @@
 # An example with additional variables
 
 
-import autograd.numpy as np
-from autoptim import minimize
+from autoptim import minimize, numpy as np
 
 
 n = 10

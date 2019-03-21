@@ -3,9 +3,7 @@
 
 
 # Example of multi-dimensional arrays
-import autograd.numpy as np
-from autoptim import minimize
-
+from autoptim import minimize, numpy as np
 
 n = 100
 p = 2

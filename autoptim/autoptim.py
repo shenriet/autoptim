@@ -1,8 +1,6 @@
 # Author: Pierre Ablin <pierreablin@gmail.com>
 # License: MIT
 
-import numpy as np_
-
 import autograd.numpy as np
 
 from autograd import grad

@@ -3,9 +3,7 @@
 
 # Example with several variables
 
-import autograd.numpy as np
-
-from autoptim import minimize
+from autoptim import minimize, numpy as np
 
 n = 1000
 n_components = 3

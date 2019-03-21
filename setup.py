@@ -1,8 +1,7 @@
 #! /usr/bin/env python
 
 import os
-import setuptools  # noqa; we are using a setuptools namespace
-from numpy.distutils.core import setup
+from setuptools import setup
 
 descr = """Optimization with autodiff"""
 
@@ -24,6 +23,9 @@ LICENSE = 'MIT'
 DOWNLOAD_URL = 'https://github.com/pierreablin/autoptim.git'
 VERSION = version
 URL = ''
+
+SCIPY_MIN_VERSION = '0.18.0'
+AUTOGRAD_MIN_VERSION = '1.2'
 
 
 def package_tree(pkgroot):
@@ -47,6 +49,8 @@ if __name__ == "__main__":
           download_url=DOWNLOAD_URL,
           long_description=open("README.md").read(),
           install_requires=[
+            'scipy >= {0}'.format(SCIPY_MIN_VERSION),
+            'autograd >= {0}'.format(AUTOGRAD_MIN_VERSION),
           ],
           classifiers=[
               'Intended Audience :: Science/Research',

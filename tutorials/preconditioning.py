@@ -9,8 +9,7 @@
 # implement using autoptim.
 from time import time
 
-import autograd.numpy as np
-from autoptim import minimize
+from autoptim import minimize, numpy as np
 
 
 n = int(1e6)

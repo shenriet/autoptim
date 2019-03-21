@@ -4,8 +4,7 @@
 # This is the simplest example of autoptim use.
 
 
-import autograd.numpy as np
-from autoptim import minimize
+from autoptim import minimize, numpy as np
 
 
 # Specify the loss function :
